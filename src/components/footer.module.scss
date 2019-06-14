@@ -1,0 +1,82 @@
+.footer {
+  background-color: $text-color;
+  @include flex(column, center, center);
+  color: #fff;
+  padding: 0.5em 0;
+
+  .contact {
+    width: 90%;
+    padding-bottom: 1em;
+    @include flex(null, null, space-between);
+
+    @include for-phone-only {
+      @include flex(column, center, center);
+    }
+  }
+
+  .copy {
+    color: rgba(#fff, 0.6);
+    @include for-phone-only {
+      font-size: 0.8em;
+    }
+  }
+}
+
+.details {
+  @include for-phone-only {
+    margin-bottom: 0.5em;
+  }
+  .media {
+    text-transform: uppercase;
+    color: $accent-color;
+
+    @include for-phone-only {
+      text-align: center;
+    }
+  }
+
+  .info {
+    font-weight: 600;
+    @include for-phone-only {
+      text-align: center;
+    }
+  }
+}
+
+.links {
+  @include flex(column, center, space-between);
+
+  .cv-btn {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+    color: #fff;
+    background: $accent-color;
+    border-radius: 5px;
+    padding: 0.3em 0.8em;
+    transition: all 350ms ease-in;
+
+    &:hover {
+      color: $accent-color;
+      background: #fff;
+      border: 2px solid $accent-color;
+    }
+  }
+}
+
+.links-social {
+  a {
+    margin: 0 0.3em;
+    img {
+      width: 2em;
+
+      &:hover {
+        opacity: 0.8;
+        border-radius: 50%;
+        background: $accent-color;
+        box-shadow: 0 0 5px 0 rgba($accent-color, 0.7);
+      }
+    }
+  }
+}
