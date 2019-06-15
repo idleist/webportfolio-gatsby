@@ -16,13 +16,22 @@ const Hero = () => {
             <a
               href="https://www.linkedin.com/in/ben-rugman-94b639185/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img src={linkedin} alt="linked in" />
             </a>
-            <a href="https://www.github.com/idleist" target="_blank">
+            <a
+              href="https://www.github.com/idleist"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={github} alt="github" />
             </a>
-            <a href="https://codepen.io/Idleist/" target="_blank">
+            <a
+              href="https://codepen.io/Idleist/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={codepen} alt="code pen" />
             </a>
           </div>

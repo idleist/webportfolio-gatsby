@@ -1,0 +1,5 @@
+I’m a self-taught, passionate coder ready for a new career in Web Development. I have always had an interest in coding and the web, it has just taken me a roundabout way to get here! I started my career as a Countryside Ranger (I know, the polar opposite of web development), working in the beautiful English countryside. The practical work involved in the role suited my love of learning new skills and problem solving. I still use this logical way of thinking in my work now.
+
+I took a career swerve to teach English in China. I spent three amazing years working with some fantastic people. The patience and creativity needed to teach and plan successful lessons has transferred into my day-to-day coding.
+
+I am now looking for my first role as a junior web developer. I love the challenges of web development. I have spent the last two years immersed in coding and building my skills in different languages and frameworks. I now want the opportunity to put my skills to the test and become a great developer.

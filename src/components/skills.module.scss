@@ -1,0 +1,45 @@
+.container {
+  @include flex(column, center, null);
+  width: 100%;
+
+  h3 {
+    font-size: 1.5rem;
+    color: rgba($text-color, 0.5);
+    text-transform: uppercase;
+    margin-bottom: 0.7em;
+  }
+
+  .skills-grid {
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 1em;
+    @include for-tablet-portrait-up {
+      grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    }
+
+    .skill {
+      @include flex(column, center, space-between);
+      margin-bottom: 1.2em;
+
+      img {
+        width: 8rem;
+        @include for-tablet-portrait-up {
+          width: 6rem;
+        }
+        @include for-desktop-up {
+          width: 8rem;
+        }
+      }
+
+      p {
+        text-transform: uppercase;
+        margin-top: 0.3em;
+        color: rgba($text-color, 0.6);
+        @include for-desktop-up {
+          margin-top: 0.5em;
+        }
+      }
+    }
+  }
+}

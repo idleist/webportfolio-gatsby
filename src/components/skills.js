@@ -1,4 +1,5 @@
 import React from "react"
+import skillsStyles from "./skills.module.scss"
 
 // Logos
 import htmlIcon from "../assets/svg/skills/html-icon.svg"
@@ -13,37 +14,37 @@ import pugIcon from "../assets/svg/skills/pug-icon.svg"
 import sassIcon from "../assets/svg/skills/sass-icon.svg"
 
 const Skill = ({ icon, altText, desc }) => (
-  <div>
+  <div className={skillsStyles.skill}>
     <img src={icon} alt={altText} />
     <p>{desc}</p>
   </div>
 )
 
-const Skills = props => {
+const Skills = () => {
   return (
     <section id="skills">
       <h2>skills</h2>
-      <div>
+      <div className={skillsStyles.container}>
         <h3>front end</h3>
-        <div>
+        <div className={skillsStyles.skillsGrid}>
           <Skill icon={htmlIcon} altText="html" desc="html" />
           <Skill icon={cssIcon} altText="css" desc="css" />
           <Skill icon={jsIcon} altText="javascript" desc="javascript" />
           <Skill icon={reactIcon} altText="react" desc="react" />
         </div>
       </div>
-      <div>
+      <div className={skillsStyles.container}>
         <h3>back end</h3>
-        <div>
+        <div className={skillsStyles.skillsGrid}>
           <Skill icon={nodeIcon} altText="node" desc="node" />
           <Skill icon={mongoIcon} altText="mongo db" desc="mongo db" />
           <Skill icon={npmIcon} altText="npm" desc="npm" />
           <Skill icon={expressIcon} altText="express" desc="express" />
         </div>
       </div>
-      <div>
+      <div className={skillsStyles.container}>
         <h3>preprocessors</h3>
-        <div>
+        <div className={skillsStyles.skillsGrid}>
           <Skill icon={pugIcon} altText="pug" desc="pug" />
           <Skill icon={sassIcon} altText="sass" desc="sass" />
         </div>

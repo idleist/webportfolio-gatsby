@@ -27,13 +27,21 @@ const Footer = () => {
         </div>
         <div className={footerStyles.links}>
           <div className={footerStyles.linksSocial}>
-            <a href="#">
+            <a href="#" rel="noopener noreferrer">
               <img src={linkedin} alt="linked in" />
             </a>
-            <a href="https://www.github.com/idleist" target="_blank">
+            <a
+              href="https://www.github.com/idleist"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={github} alt="github" />
             </a>
-            <a href="https://codepen.io/Idleist/" target="_blank">
+            <a
+              href="https://codepen.io/Idleist/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={codepen} alt="code pen" />
             </a>
           </div>
