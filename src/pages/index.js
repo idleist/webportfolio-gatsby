@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import Skills from "../components/skills"
 import ProjectContainer from "../components/projects"
 import About from "../components/about"
+import Contact from "../components/contact"
 import "../styles/base.scss"
 
 export default () => (
@@ -11,6 +12,7 @@ export default () => (
       <Skills />
       <ProjectContainer />
       <About />
+      <Contact />
     </div>
   </Layout>
 )
