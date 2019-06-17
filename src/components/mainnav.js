@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import logo from "../assets/svg/logo.svg"
 import "./mainnav.scss"
 
@@ -48,48 +49,48 @@ class MainNav extends React.Component {
         <div className="top-nav">
           <ul className="topnav-list">
             <li>
-              <a className="topnav-link" href="#skills">
+              <Link className="topnav-link" to="#skills">
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="topnav-link" href="#portfolio">
+              <Link className="topnav-link" to="#projects">
                 Portfolio
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="topnav-link" href="#about">
+              <Link className="topnav-link" to="#about">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="topnav-link" href="#contact">
+              <Link className="topnav-link" to="#contact">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
         <div className={`overlay-nav ${!this.state.showMenu ? "" : "open"}`}>
           <ul className="nav-list">
             <li>
-              <a className="nav-link" onClick={this.openNav} href="#skills">
+              <Link className="nav-link" onClick={this.openNav} to="#skills">
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="nav-link" onClick={this.openNav} href="#portfolio">
+              <Link className="nav-link" onClick={this.openNav} to="#projects">
                 Portfolio
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="nav-link" onClick={this.openNav} href="#about">
+              <Link className="nav-link" onClick={this.openNav} to="#about">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="nav-link" onClick={this.openNav} href="#contact">
+              <Link className="nav-link" onClick={this.openNav} to="#contact">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
