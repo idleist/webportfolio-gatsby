@@ -1,14 +1,41 @@
 .container {
   margin-top: 1em;
   @include flex(column, center, null);
+  text-align: justify;
+
+  h3 {
+    font-size: 1.5rem;
+    color: rgba(54, 55, 50, 0.5);
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  blockquote {
+    color: $accent-color;
+  }
+
+  .info {
+    width: 90%;
+  }
+  p {
+    margin-bottom: 1em;
+    font-size: 1.4rem;
+  }
 }
 
 .btns {
   width: 80%;
+  margin-bottom: 1em;
   @include for-tablet-portrait-up {
     width: 50%;
   }
   @include for-tablet-landscape-up {
     width: 40%;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: 1rem;
   }
 }

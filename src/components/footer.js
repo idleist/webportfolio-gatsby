@@ -4,6 +4,7 @@ import codepen from "../assets/svg/codepenlogo.svg"
 import github from "../assets/svg/githublogo.svg"
 import linkedin from "../assets/svg/linkedinlogo.svg"
 import footerStyles from "./footer.module.scss"
+import cv from "../assets/cv.pdf"
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -27,7 +28,10 @@ const Footer = () => {
         </div>
         <div className={footerStyles.links}>
           <div className={footerStyles.linksSocial}>
-            <a href="#" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/ben-rugman-94b639185/"
+              rel="noopener noreferrer"
+            >
               <img src={linkedin} alt="linked in" />
             </a>
             <a
@@ -45,11 +49,7 @@ const Footer = () => {
               <img src={codepen} alt="code pen" />
             </a>
           </div>
-          <a
-            className={footerStyles.cvBtn}
-            href="/assets/cv.pdf"
-            download="benrugmanCV"
-          >
+          <a className={footerStyles.cvBtn} href={cv} download="benrugmanCV">
             my cv
           </a>
         </div>

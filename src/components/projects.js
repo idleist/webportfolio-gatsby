@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 import { FaSistrix } from "react-icons/fa"
 import Img from "gatsby-image"
 import ProjectBtns from "../components/projectButtons"
@@ -18,13 +18,13 @@ const Project = ({
       <h3 className={projectStyles.title}>{title}</h3>
       <p className={projectStyles.skills}>{skills}</p>
     </div>
-    <a className={projectStyles.link} href={projectHref}>
+    <Link className={projectStyles.link} to={`/project/${projectHref}`}>
       <div className={projectStyles.overlay}>
         <p className={projectStyles.overlayText}>view project</p>
         <FaSistrix className={projectStyles.searchIcon} />
       </div>
       {children}
-    </a>
+    </Link>
     <ProjectBtns demoHref={demoHref} codeHref={codeHref} />
   </div>
 )
@@ -42,7 +42,7 @@ const ProjectContainer = () => {
               skills="node, express, npm"
               demoHref="https://www.google.com"
               codeHref="https://www.yahoo.com"
-              projectHref="https://www.google.com"
+              projectHref="portfolio"
             >
               <Img
                 className={projectStyles.image}
@@ -53,9 +53,9 @@ const ProjectContainer = () => {
             <Project
               title="pizza magic website"
               skills="html, materialize, css"
-              demoHref="https://www.google.com"
-              codeHref="https://www.yahoo.com"
-              projectHref="https://www.google.com"
+              demoHref="http://pizzamagic-com.stackstaging.com/"
+              codeHref="https://github.com/idleist/pizza-magic"
+              projectHref="pizzamagic"
             >
               <Img
                 className={projectStyles.image}
@@ -66,9 +66,9 @@ const ProjectContainer = () => {
             <Project
               title="joanna thorne wellbeing"
               skills="html, flexbox, css"
-              demoHref="https://www.google.com"
-              codeHref="https://www.yahoo.com"
-              projectHref="https://www.google.com"
+              demoHref="https://joannathornewellbeing.co.uk/"
+              codeHref="https://github.com/idleist/joannathornewellbeing"
+              projectHref="wellbeing"
             >
               <Img
                 className={projectStyles.image}
@@ -79,9 +79,9 @@ const ProjectContainer = () => {
             <Project
               title="javascript office app"
               skills="html, javascript"
-              demoHref="https://www.google.com"
-              codeHref="https://www.yahoo.com"
-              projectHref="https://www.google.com"
+              demoHref="http://office-app-com.stackstaging.com/"
+              codeHref="https://github.com/idleist/JavaScript-Office-App-Suite"
+              projectHref="officeapp"
             >
               <Img
                 className={projectStyles.image}
@@ -92,9 +92,9 @@ const ProjectContainer = () => {
             <Project
               title="perrennial designs"
               skills="node, express, npm, mongodb"
-              demoHref="https://www.google.com"
-              codeHref="https://www.yahoo.com"
-              projectHref="https://www.google.com"
+              demoHref="https://radiant-reaches-88720.herokuapp.com/"
+              codeHref="https://github.com/idleist/perrennialdesigns"
+              projectHref="perrennialdesigns"
             >
               <Img
                 className={projectStyles.image}
@@ -105,9 +105,9 @@ const ProjectContainer = () => {
             <Project
               title="chasing the rain"
               skills="gatsby js"
-              demoHref="https://www.google.com"
-              codeHref="https://www.yahoo.com"
-              projectHref="https://www.google.com"
+              demoHref="https://chasingtherain.co.uk/"
+              codeHref="https://github.com/idleist/Chasing-The-Rain-React-GatsbyJs"
+              projectHref="chasingtherain"
             >
               <Img
                 className={projectStyles.image}

@@ -19,7 +19,6 @@ export const query = graphql`
   }
 `
 
-// NAV CODE
 const ProjectNav = styled.nav`
   width: 100%;
   padding: 0 1.5em;
@@ -61,7 +60,10 @@ const Project = ({ data }) => (
           codeHref={data.markdownRemark.frontmatter.code}
         />
       </div>
-      <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}></div>
+      <div
+        className={projectStyles.info}
+        dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+      ></div>
     </div>
     <Footer />
   </React.Fragment>
