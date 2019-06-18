@@ -4,12 +4,6 @@ demo: "#"
 code: "https://www.github.com"
 ---
 
-```grid|3
-![home page](./screenshots/appsuite-breaks.png)
-![events page](./screenshots/wellbeing-ss2.png)
-![mobile view](./screenshots/wellbeing-mobile.png)
-```
-
 ### PROJECT OUTLINE
 
 I wanted to include this portfolio within my projects pages. I built this site in NodeJS, using the pug templating language. The portfolio has a working contact form using the Nodemailer package. Form validation is included server-side with the express-validator package. I have utilised SCSS for styling, as I can use cross site global variables and mixins for reusable code.
