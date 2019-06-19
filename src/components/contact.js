@@ -9,16 +9,16 @@ import contactBg from "../assets/svg/contactbg.svg"
 const ContactSection = styled.section`
   width: 100%;
   background: url(${contactBgsm}) no-repeat;
-  background-size: 100%;
+  background-size: cover;
 
   @media screen and (min-width: 600px) {
     background: url(${contactBgmd}) no-repeat;
-    background-size: 100%;
+    background-size: cover;
   }
 
   @media screen and (min-width: 900px) {
     background: url(${contactBg}) no-repeat;
-    background-size: 100%;
+    background-size: cover;
   }
 `
 class Contact extends React.Component {
