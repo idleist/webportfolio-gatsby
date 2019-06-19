@@ -58,7 +58,13 @@ class Contact extends React.Component {
       <ContactSection id="contact">
         <div className="form-container">
           <h2 className="form-title">contact</h2>
-          <form className="form">
+          <form
+            className="form"
+            name="contact"
+            method="POST"
+            data-netlify-recaptcha="true"
+            data-netlify="true"
+          >
             <div className="form-input-container">
               <label className="form-label">Name</label>
               <input
@@ -88,6 +94,7 @@ class Contact extends React.Component {
                 onChange={this.handleChange}
               />
             </div>
+            <div data-netlify-recaptcha="true"></div>
             <input type="submit" value="SEND MESSAGE" />
           </form>
         </div>
