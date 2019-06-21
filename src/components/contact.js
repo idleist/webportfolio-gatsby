@@ -22,16 +22,16 @@ const ContactSection = styled.section`
   }
 `
 class Contact extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      name: "",
-      email: "",
-      message: "",
-      float: true,
-    }
-    this.handleChange = this.handleChange.bind(this)
-  }
+  // constructor(props) {
+  //   super(props)
+  //   // this.state = {
+  //   //   name: "",
+  //   //   email: "",
+  //   //   message: "",
+  //   //   float: true,
+  //   // }
+  //   // this.handleChange = this.handleChange.bind(this)
+  // }
 
   componentDidMount() {
     const formInputs = document.querySelectorAll(".form-input")
@@ -49,9 +49,9 @@ class Contact extends React.Component {
     })
   }
 
-  handleChange(e) {
-    this.setState({ [e.target.name]: [e.target.value] })
-  }
+  // handleChange(e) {
+  //   this.setState({ [e.target.name]: [e.target.value] })
+  // }
 
   render() {
     return (
@@ -61,9 +61,9 @@ class Contact extends React.Component {
           <form
             className="form"
             name="contact"
-            method="POST"
-            data-netlify-recaptcha="true"
+            method="post"
             data-netlify="true"
+            data-netlify-recaptcha="true"
           >
             <div className="form-input-container">
               <label className="form-label">Name</label>
@@ -71,8 +71,7 @@ class Contact extends React.Component {
                 className="form-input"
                 type="text"
                 name="name"
-                value={this.state.name}
-                onChange={this.handleChange}
+                // onChange={this.handleChange}
               />
             </div>
             <div className="form-input-container">
@@ -81,8 +80,7 @@ class Contact extends React.Component {
                 className="form-input"
                 type="email"
                 name="email"
-                value={this.state.email}
-                onChange={this.handleChange}
+                // onChange={this.handleChange}
               />
             </div>
             <div className="form-input-container">
@@ -90,8 +88,7 @@ class Contact extends React.Component {
               <textarea
                 className="form-input"
                 name="message"
-                value={this.state.message}
-                onChange={this.handleChange}
+                // onChange={this.handleChange}
               />
             </div>
             <div data-netlify-recaptcha="true"></div>
