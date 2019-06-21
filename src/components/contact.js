@@ -28,7 +28,6 @@ class Contact extends React.Component {
   //   //   name: "",
   //   //   email: "",
   //   //   message: "",
-  //   //   float: true,
   //   // }
   //   // this.handleChange = this.handleChange.bind(this)
   // }
@@ -50,7 +49,7 @@ class Contact extends React.Component {
   }
 
   // handleChange(e) {
-  //   this.setState({ [e.target.name]: [e.target.value] })
+  //   this.setState({ [e.target.name]: e.target.value })
   // }
 
   render() {
