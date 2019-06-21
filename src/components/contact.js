@@ -62,7 +62,6 @@ class Contact extends React.Component {
             className="form"
             name="contact"
             method="POST"
-            data-netlify-recaptcha="true"
             data-netlify="true"
           >
             <input type="hidden" name="contact" value="contact" />
@@ -92,7 +91,6 @@ class Contact extends React.Component {
                 // onChange={this.handleChange}
               />
             </div>
-            <div data-netlify-recaptcha="true"></div>
             <input className="submit-btn" type="submit" value="SEND MESSAGE" />
           </form>
         </div>
