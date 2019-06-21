@@ -56,15 +56,21 @@ class Contact extends React.Component {
   render() {
     return (
       <ContactSection id="contact">
-        <div className="form-container">
+        <form className="form-container">
           <h2 className="form-title">contact</h2>
           <form
             className="form"
             name="contact"
             method="POST"
+            netlify-honeypot="bot-field"
             data-netlify="true"
           >
             <input type="hidden" name="contact" value="contact" />
+            <p className="hidden">
+              <label>
+                Don’t fill this out if you're human: <input name="bot-field" />
+              </label>
+            </p>
             <div className="form-input-container">
               <label className="form-label">Name</label>
               <input
@@ -93,7 +99,7 @@ class Contact extends React.Component {
             </div>
             <input className="submit-btn" type="submit" value="SEND MESSAGE" />
           </form>
-        </div>
+        </form>
       </ContactSection>
     )
   }
