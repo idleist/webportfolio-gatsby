@@ -60,11 +60,12 @@ class Contact extends React.Component {
           <h2 className="form-title">contact</h2>
           <form
             className="form"
-            name="contact-form"
+            name="contact"
             method="POST"
             data-netlify-recaptcha="true"
             data-netlify="true"
           >
+            <input type="hidden" name="form-name" value="contact" />
             <div className="form-input-container">
               <label className="form-label">Name</label>
               <input
