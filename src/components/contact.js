@@ -60,7 +60,7 @@ class Contact extends React.Component {
           <h2 className="form-title">contact</h2>
           <form
             className="form"
-            name="contact"
+            name="contact-form"
             method="POST"
             data-netlify-recaptcha="true"
             data-netlify="true"
