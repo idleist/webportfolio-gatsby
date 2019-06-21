@@ -55,7 +55,7 @@ class Contact extends React.Component {
   render() {
     return (
       <ContactSection id="contact">
-        <form className="form-container">
+        <div className="form-container">
           <h2 className="form-title">contact</h2>
           <form
             className="form"
@@ -98,7 +98,7 @@ class Contact extends React.Component {
             </div>
             <input className="submit-btn" type="submit" value="SEND MESSAGE" />
           </form>
-        </form>
+        </div>
       </ContactSection>
     )
   }
