@@ -39,7 +39,7 @@ const ProjectContainer = () => {
           <div className={projectStyles.container}>
             <Project
               title="web portfolio"
-              skills="node, express, npm"
+              skills="gatsby js, graphql, node, express, npm"
               demoHref="https://www.google.com"
               codeHref="https://www.yahoo.com"
               projectHref="portfolio"
@@ -104,7 +104,7 @@ const ProjectContainer = () => {
             </Project>
             <Project
               title="chasing the rain"
-              skills="gatsby js"
+              skills="gatsby js, graphql"
               demoHref="https://chasingtherain.co.uk/"
               codeHref="https://github.com/idleist/Chasing-The-Rain-React-GatsbyJs"
               projectHref="chasingtherain"

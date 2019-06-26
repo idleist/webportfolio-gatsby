@@ -11,7 +11,7 @@ code: "https://github.com/idleist/joannathornewellbeing"
 ###project outline
 The client had a small home business and had built up an online presence on social media. She had wanted a website for a while but was not sure how to go about it and was confused about hosting a website. I met with the client and we discussed what she wanted from the website.
 
-I used bootstrap and JQuery for responsive styling and navigation toggle for smaller devices. I think the design is clear and conveys all the information required by the client. This was my second web project.
+I used bootstrap and JQuery for responsive styling and navigation toggle for smaller devices. I think the design is clear and conveys all the information required by the client.
 
 ###plans
 

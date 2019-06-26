@@ -9,7 +9,7 @@ This was my first full website build. It was the project that set me on the jour
 
 I used Materialize CSS for the responsive navigation, images and meal deal cards. I took all the food photos myself and used Gimp to edit all the photos and logos for use on the site.
 
-I am aware that this site is basic and lacks the design flare of many sites, however as a first project, it was a great learning experience for me and it fulfils all the criteria that was set out at the start of the project.
+It was a great first project. It was a great learning experience for me and it fulfils all the criteria that was set out at the start of the project.
 
 ###home page
 ![pizza magic homepage](./screenshots/pizza-magic.png)

@@ -6,7 +6,11 @@ code: "https://www.github.com"
 
 ### PROJECT OUTLINE
 
-I wanted to include this portfolio within my projects pages. I built this site in NodeJS, using the pug templating language. The portfolio has a working contact form using the Nodemailer package. Form validation is included server-side with the express-validator package. I have utilised SCSS for styling, as I can use cross site global variables and mixins for reusable code.
+I wanted to include this portfolio within my projects pages. This site was built using Gatsby JS and graphql. All the images and screenshots on the site are optimized using gatsby image. Information about each project has been written in markdown and pulled in to the site with graphql queries.
+
+I had used Gatsby JS on a previous project and loved the ability to create a static site using the React framework. Using graphql takes a while to get your head around, but it is an upcoming technology and I wanted to experiment with it. I found it a great addition to this project, and feel confident about using it in future projects and with different frameworks.
+
+Gatsby works well with SCSS, and the site is styled using SCSS with modular styling and styled components.
 
 ### PLANS
 
