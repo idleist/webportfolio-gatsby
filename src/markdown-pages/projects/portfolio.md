@@ -1,7 +1,7 @@
 ---
 title: "My Portfolio Website"
 demo: "#"
-code: "https://www.github.com"
+code: "https://github.com/idleist/webportfolio-gatsby"
 ---
 
 ### PROJECT OUTLINE

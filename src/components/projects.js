@@ -40,8 +40,8 @@ const ProjectContainer = () => {
             <Project
               title="web portfolio"
               skills="gatsby js, graphql, node, express, npm"
-              demoHref="https://www.google.com"
-              codeHref="https://www.yahoo.com"
+              demoHref="https://www.idleistdesign.co.uk/"
+              codeHref="https://github.com/idleist/webportfolio-gatsby"
               projectHref="portfolio"
             >
               <Img
